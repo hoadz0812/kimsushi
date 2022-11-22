@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimsushi</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <div class="menu-bar">
+                    <span></span>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Về chúng tôi</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Thực đơn</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Phản hồi</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Nhân sự</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="big-img">
+        <div class="big-img-content">
+            <h2>KIMSUSHI</h2>
+            <p>Ẩm thực Nhật Bản - Nét tinh túy ẩm thực Đông Nam Á</p>
+            <button class="big-img-content-btn btn">MENU</button>
+        </div>
+    </section>
+    <script>
+        const menuBar = document.querySelector(".menu-bar");
+        menuBar.addEventListener("click", function () {
+            menuBar.classList.toggle("active");
+            document.querySelector(".menu-items").classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>
