@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sono:wght@500&family=Zilla+Slab&display=swap');
 
 :root{
     --primary-color: #FFA07A;
@@ -19,6 +19,10 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+.section-padding{
+    padding: 80px 0;
 }
 
 .container{
@@ -43,6 +47,10 @@ a{
     color: var(--primary-color);
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.btn-about{
+    background-color: #2F4F4F;
 }
 
 .top{
@@ -216,4 +224,39 @@ a{
     color: var(--sub-color);
     margin: 20px 0;
     font-weight: bold;
+}
+
+.about{
+    background-color: var(--primary-color);
+    width: 100vw;
+}
+
+.about .about-item{
+    width: calc(100%/2);
+    padding: 15px;
+}
+
+.about .about-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .section-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .section-title h2{
+    font-size: 40px;
+    color: var(--sub-color);
+    font-family: 'Zilla Slab', serif;
+}
+
+.about .section-title h2::before{
+    content: attr(data-title);
+    display: block;
+    color: #FFD700;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
 }

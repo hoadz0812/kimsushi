@@ -49,17 +49,43 @@
             <button class="big-img-content-btn btn">MENU</button>
         </div>
     </section>
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="OUT STORY">ABOUT US</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-item">
+                    <h2>Ẩm thực Nhật Bản</h2>
+                    <p>Kim SuShi – Quán ăn Nhật Bản sẽ đưa bạn ghé đến những quán ăn ở Tokyo đã tạo nên danh tiếng cho
+                        nền ẩm thực Nhật Bản. Nếu đã một lần thưởng thức đồ ăn tại Kim SuShi, bạn sẽ không thể quên được
+                        hương vị “ngất ngây” của những món sushi, sashimi, cá nướng… khi hòa quyện vào với các loại gia
+                        vị đặc trưng Nhật Bản đã trở nên hấp dẫn đến thế nào. Ngoài ra, những món ăn kèm không thể bỏ
+                        qua như cơm cuộn, mỳ soba lạnh, súp miso và các loại lẩu cũng sẽ làm bạn ấn tượng thêm về nền ẩm
+                        thực Nhật Bản.</p>
+                        <button class="btn btn-about">
+                            XEM MENU
+                        </button>
+                </div>
+                <div class="about-item">
+                    <img src="img/about-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         const menuBar = document.querySelector(".menu-bar");
         menuBar.addEventListener("click", function () {
             menuBar.classList.toggle("active");
             document.querySelector(".menu-items").classList.toggle("active");
         })
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function () {
             const x = this.pageYOffset;
-            if(x>80){
+            if (x > 80) {
                 document.querySelector(".top").classList.add("active");
-            }else{
+            } else {
                 document.querySelector(".top").classList.remove("active");
             }
         })
