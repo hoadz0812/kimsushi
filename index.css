@@ -2,8 +2,10 @@
 
 :root{
     --primary-color: #FFA07A;
+    --bg-color: #F08080;
     --sub-color: #E6E6FA;
     --text-color: #333;
+    --title-color: #FFD700;
 }
 
 *{
@@ -241,22 +243,108 @@ a{
     border-radius: 10px;
 }
 
-.about .section-title{
+.section-title{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.about .section-title h2{
+.section-title h2{
     font-size: 40px;
     color: var(--sub-color);
     font-family: 'Zilla Slab', serif;
 }
 
-.about .section-title h2::before{
+.section-title h2::before{
     content: attr(data-title);
     display: block;
-    color: #FFD700;
+    color: var(--title-color);
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
+}
+
+.about .about-item h2{
+    color: var(--text-color);
+    font-size: 35px;
+}
+
+.about .about-item p{
+    font-size: 18px;
+    margin: 15px 0 30px;
+}
+
+.menu{
+    background-color: var(--bg-color);
+}
+
+.menu-title{
+    width: 100%;
+    text-align: center;
+}
+
+.menu-title .menu-btn{
+    background-color: transparent;
+    margin: 10px 12px;
+    border: none;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.menu-title .menu-btn.active{
+    color: var(--title-color);
+}
+
+.menu-title .menu-btn:hover{
+    color: var(--title-color);
+}
+
+.food-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    position: relative;
+}
+
+.food-items::before{
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border: 1px dashed var(--primary-color);
+}
+
+.food-items:hover .food-item p{
+    color: var(--title-color);
+}
+
+.food-items:hover .food-price p{
+    color: var(--text-color);
+}
+
+.food-item{
+    display: flex;
+    align-items: center;
+}
+
+.food-item img{
+    width: 120px;
+    height: 100px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+.food-item p{
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.food-price p{
+    color: var(--title-color);
+    transition: all 0.3s ease;
+    font-size: 20px;
 }
